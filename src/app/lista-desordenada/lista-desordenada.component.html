@@ -1,7 +1,10 @@
 <div>
-
+    <h1>Lista Personas</h1>
+    <ul #lista *ngIf="hide">
+        <li *ngFor="let p of copiaLista">{{p.nombre}} {{p.apellido}} {{p.edad}}</li>
+    </ul>
 </div>
 <div>
-    <button (click)="cambioEstilo()"></button>
+    <button (click)="cambioEstilo()">Cambiar Estilos</button>
     <button (click)="toggle()">Ver</button>
 </div>
