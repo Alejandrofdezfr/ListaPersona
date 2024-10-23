@@ -11,4 +11,12 @@ export class ListaDesordenadaComponent {
 
   
 
+  public toggle(){
+
+  }
+
+  public cambioEstilo(){
+
+  }
+
 }
