@@ -1,6 +1,6 @@
 <div>
     <h1>Lista Personas</h1>
-    <ul #lista *ngIf="hide">
+    <ul #lista *ngIf="hide" [ngClass]="{'aplicar-estilo': estilo}">
         <li *ngFor="let p of copiaLista">{{p.nombre}} {{p.apellido}} {{p.edad}}</li>
     </ul>
 </div>

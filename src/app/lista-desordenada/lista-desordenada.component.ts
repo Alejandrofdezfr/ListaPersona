@@ -1,13 +1,12 @@
 import { Component, ElementRef, ViewChild } from '@angular/core';
 import { Persona } from '../persona';
 import { ServicioPersona } from '../Service/servicio-persona';
-import { NgFor, NgIf } from '@angular/common';
-import { Transform } from 'stream';
+import { NgClass, NgFor, NgIf } from '@angular/common';
 
 @Component({
   selector: 'lista-desordenada',
   standalone: true,
-  imports: [NgFor,NgIf],
+  imports: [NgFor,NgIf,NgClass],
   templateUrl: './lista-desordenada.component.html',
   styleUrl: './lista-desordenada.component.css'
 })
